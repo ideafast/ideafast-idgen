@@ -9,6 +9,9 @@ module.exports = function (config) {
         timeoutMS: 30000,
         jest: {
             enableFindRelatedTests: false
+        },
+        dashboard: {
+            reportType: 'full'
         }
     });
 };
