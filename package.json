@@ -1,8 +1,8 @@
 {
     "name": "@ideafast/idgen",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "ID generators for the IDEAFast study",
-    "main": "index.js",
+    "main": "./dist/ideafast-idgen.js",
     "repository": "https://github.com/ideafast/ideafast-idgen.git",
     "author": "Florian Guitton <f.guitton@imperial.ac.uk>",
     "license": "MIT",
@@ -12,9 +12,11 @@
         "generator"
     ],
     "scripts": {
-        "test": "jest",
+        "test": "jest --coverage",
+        "lint": "eslint ./config ./src",
         "build": "webpack --config ./config/webpack.config.js",
-        "lint": "eslint ./config ./src"
+        "start": "webpack --config ./config/webpack.config.js --progress --color --watch",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@babel/core": "7.8.6",

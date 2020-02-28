@@ -1,0 +1,8 @@
+/.github
+/.vscode
+/coverage
+/build
+/config
+/src
+.*
+*.log
