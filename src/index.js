@@ -28,7 +28,9 @@ const getCheckCharacter = (input) => {
 };
 
 const generate = (length) => {
-    if (length === undefined || length <= 1)
+    if (length <= 1)
+        return;
+    if (length === undefined)
         length = 9;
     const prefix = getRandomString(length - 1);
     const check = getCheckCharacter(prefix);
@@ -39,6 +41,8 @@ const generate = (length) => {
 };
 
 const validate = (input) => {
+    if (typeof input !== 'string')
+        return false;
     const remainder = getRemainder(input, 1);
     return (remainder === 0);
 };
