@@ -35,7 +35,7 @@ const generate = (length) => {
     const prefix = getRandomString(length - 1);
     const check = getCheckCharacter(prefix);
     const id = `${prefix}${check}`;
-    if (id.length > length)
+    if (id.length !== length)
         return generate(length);
     return id;
 };
