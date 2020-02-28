@@ -10,6 +10,7 @@ test('Generates an ID of given length', () => {
 
 test('Generates an ID ignoring invalid length', () => {
     expect(IDHandler.generate(-3)).toHaveLength(9);
+    expect(IDHandler.generate(1)).toHaveLength(9);
 });
 
 test('Generates valid IDs', () => {

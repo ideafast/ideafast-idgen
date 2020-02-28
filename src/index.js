@@ -28,7 +28,7 @@ const getCheckCharacter = (input) => {
 };
 
 const generate = (length) => {
-    if (length === undefined || length < 0)
+    if (length === undefined || length <= 1)
         length = 9;
     const prefix = getRandomString(length - 1);
     const check = getCheckCharacter(prefix);
