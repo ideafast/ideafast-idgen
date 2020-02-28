@@ -1,6 +1,6 @@
 {
     "name": "@ideafast/idgen",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "ID generators for the IDEAFast study",
     "main": "./dist/ideafast-idgen.js",
     "repository": "https://github.com/ideafast/ideafast-idgen.git",
