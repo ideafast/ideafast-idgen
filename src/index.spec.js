@@ -13,6 +13,11 @@ test('Generates an ID ignoring invalid length', () => {
     expect(IDHandler.generate(1)).toHaveLength(9);
 });
 
+test('Generates different IDs', () => {
+    const ids = [...Array(10).keys()].map(() => IDHandler.generate());
+    expect(ids.filter((v, i, self) => self.indexOf(v) === i)).toHaveLength(10);
+});
+
 test('Generates valid IDs', () => {
     const ids = [...Array(10).keys()].map(() => IDHandler.generate());
     const res = ids.map((id) => IDHandler.validate(id));
