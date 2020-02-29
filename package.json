@@ -1,6 +1,6 @@
 {
     "name": "@ideafast/idgen",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "description": "ID generators for the IDEAFast study",
     "main": "./dist/ideafast-idgen.js",
     "repository": "https://github.com/ideafast/ideafast-idgen.git",
@@ -26,9 +26,10 @@
         "@stryker-mutator/html-reporter": "2.5.0",
         "@stryker-mutator/javascript-mutator": "2.5.0",
         "@stryker-mutator/jest-runner": "2.5.0",
-        "@types/jest": "22.2.3",
+        "@types/jest": "25.1.3",
         "babel-loader": "8.0.6",
         "babel-plugin-add-module-exports": "1.0.2",
+        "babel-plugin-rewire": "1.2.0",
         "eslint": "6.8.0",
         "eslint-loader": "3.0.3",
         "eslint-plugin-jest": "23.8.0",
@@ -36,5 +37,8 @@
         "uglifyjs-webpack-plugin": "2.2.0",
         "webpack": "4.41.6",
         "webpack-cli": "3.3.11"
+    },
+    "babel": {
+        "extends": "./config/babel.config.js"
     }
 }
