@@ -27,7 +27,7 @@ const getCheckCharacter = (input) => {
     return characterSet.charAt(checkCodePoint);
 };
 
-const generate = (length) => {
+export const generate = (length) => {
     if (length <= 1)
         return;
     if (length === undefined)
@@ -40,16 +40,14 @@ const generate = (length) => {
     return id;
 };
 
-const validate = (input) => {
+export const validate = (input) => {
     if (typeof input !== 'string')
         return false;
     const remainder = getRemainder(input, 1);
     return (remainder === 0);
 };
 
-const createIDHandler = () => ({
+export default {
     generate,
     validate
-});
-
-export default createIDHandler();
+};
