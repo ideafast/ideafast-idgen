@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const IDHandler = require('./index');
 const getRandomStringMock = jest.fn();
 
@@ -15,10 +16,10 @@ test('Exports the right shape', () => {
 });
 
 test('Derives correct remainders', () => {
-    const INT_getRemainder = IDHandler.__get__('getRemainder');
+    const __getRemainder = IDHandler.__get__('getRemainder');
     const samples = ['HT', '4NT4K', 'QRJA4DRS7', 'FGEET9TY7Z6S5ZG'];
-    expect(samples.map((sample) => INT_getRemainder(sample, 2)).join(',')).toBe('9,14,23,10');
-    expect(samples.map((sample) => INT_getRemainder(sample, 1)).join(',')).toBe('0,0,0,0');
+    expect(samples.map((sample) => __getRemainder(sample, 2)).join(',')).toBe('9,14,23,10');
+    expect(samples.map((sample) => __getRemainder(sample, 1)).join(',')).toBe('0,0,0,0');
 });
 
 test('Retries on incorrect lengths', () => {

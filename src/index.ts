@@ -2,14 +2,14 @@
 
 const characterSet = 'ACDEFGHJKNPQRSTVXYZ2345679';
 
-const getRandomString = (length) => {
+const getRandomString = (length: number): string => {
     let text = '';
     for (let i = 0; i < length; i++)
         text += characterSet.charAt(Math.floor(Math.random() * characterSet.length));
     return text;
 };
 
-const getRemainder = (input, factor) => {
+const getRemainder = (input: string, factor: number): number => {
     let sum = 0;
     for (let i = input.length - 1; i >= 0; i--) {
         const codePoint = characterSet.indexOf(input[i]);
@@ -21,13 +21,13 @@ const getRemainder = (input, factor) => {
     return sum % characterSet.length;
 };
 
-const getCheckCharacter = (input) => {
+const getCheckCharacter = (input: string): string => {
     const remainder = getRemainder(input, 2);
     const checkCodePoint = (characterSet.length - remainder) % characterSet.length;
     return characterSet.charAt(checkCodePoint);
 };
 
-export const generate = (length) => {
+export const generate = (length: number): string => {
     if (length <= 1)
         return;
     if (length === undefined)
@@ -40,7 +40,7 @@ export const generate = (length) => {
     return id;
 };
 
-export const validate = (input) => {
+export const validate = (input: string): boolean => {
     if (typeof input !== 'string')
         return false;
     const remainder = getRemainder(input, 1);

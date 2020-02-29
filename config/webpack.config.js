@@ -3,7 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/index.js',
+    entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: 'lib.umd.js',
@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js)$/,
+                test: /\.(js|ts)$/,
                 exclude: /(node_modules)/,
                 use: 'babel-loader'
             }
