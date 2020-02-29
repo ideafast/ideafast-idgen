@@ -11,9 +11,7 @@ module.exports = function (config) {
             enableFindRelatedTests: false
         },
         dashboard: {
-            reportType: 'full',
-            version: 'master',
-            project: 'github.com/ideafast/ideafast-idgen'
+            reportType: 'full'
         }
     });
 };
