@@ -12,7 +12,7 @@ const getRandomString = (length) => {
 const getRemainder = (input, factor) => {
     let sum = 0;
     for (let i = input.length - 1; i >= 0; i--) {
-        const codePoint = characterSet.indexOf(input.charAt(i));
+        const codePoint = characterSet.indexOf(input[i]);
         let addend = factor * codePoint;
         factor = (factor === 2) ? 1 : 2;
         addend = Math.floor(addend / characterSet.length) + (addend % characterSet.length);
