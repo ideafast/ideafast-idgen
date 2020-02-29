@@ -48,10 +48,6 @@ To use the library directly within an HTML document you can reference or downloa
 </html>
 ```
 
-### Build the library
-
-Building the library is easy. First run `yarn install && yarn run build`, to build the application. Artifacts will be rendered in the `/dist` folder as the root of your clone.
-
 ## Local development
 
 ### Requirements
