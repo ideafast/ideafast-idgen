@@ -3,7 +3,7 @@
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fideafast%2Fideafast-idgen%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/ideafast/ideafast-idgen/master)
 ![Build status](https://github.com/ideafast/ideafast-idgen/workflows/Node.js%20CI/badge.svg)
 [![Dependency Status](https://img.shields.io/david/ideafast/ideafast-idgen.svg)](https://david-dm.org/ideafast/ideafast-idgen)
-[![devDependency Status](https://img.shields.io/david/dev/ideafast/ideafast-idgen.svg)](https://david-dm.org/ideafast/ideafast-idgen#info=devDependencies)
+[![devDependency Status](https://img.shields.io/david/dev/ideafast/ideafast-idgen.svg)](https://david-dm.org/ideafast/ideafast-idgen?type=dev)
 
 ![IDEAFast ID Generator](https://avatars3.githubusercontent.com/u/60649739?s=100&v=4)
 
