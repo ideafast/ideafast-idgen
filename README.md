@@ -9,6 +9,49 @@
 
 # The IDEAFast ID Generation tool
 
+## Usage
+
+### Node.js
+
+In a modern ES6 compatible setup you can simply import the `@ideafast/idgen` package (available from both NPM and GitHub).
+
+```bash
+$ yarn add @ideafast/idgen
+```
+
+```js
+import IDEAFastID from '@ideafast/idgen';
+
+// Generate an ID
+const id = IDEAFastID.generate();
+// Validate an ID
+if (IDEAFastID.validate(id))
+    console.log(id);
+```
+
+### Browser 
+
+To use the library directly within an HTML document you can reference or download it from a CDN such as [unpkg.com](https://unpkg.com)
+
+```html
+<html>
+    ...
+    <script src="https://unpkg.com/@ideafast/idgen@latest/dist/lib.umd.js"></script>
+    <script>
+        // Generate an ID
+        const id = IDEAFastID.generate();
+        // Validate an ID
+        if (IDEAFastID.validate(id))
+            document.body.innerText = id;
+    </script>
+    ...
+</html>
+```
+
+### Build the library
+
+Building the library is easy. First run `yarn install && yarn run build`, to build the application. Artifacts will be rendered in the `/dist` folder as the root of your clone.
+
 ## Local development
 
 ### Requirements

@@ -6,10 +6,10 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, '../dist'),
-        filename: 'ideafast-idgen.js',
+        filename: 'lib.umd.js',
         libraryTarget: 'umd',
         globalObject: 'this',
-        library: 'ideafastIDGen'
+        library: 'IDEAFastID'
     },
     module: {
         rules: [
