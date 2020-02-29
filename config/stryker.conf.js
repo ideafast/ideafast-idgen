@@ -1,6 +1,10 @@
-module.exports = function (config) {
+module.exports = (config) => {
     config.set({
-        mutator: 'javascript',
+        mutate: [
+            '{src,lib}/**/*.[jt]s?(x)',
+            '!{src,lib}/**/?(*.)+(spec|test).[jt]s?(x)',
+        ],
+        mutator: 'typescript',
         packageManager: 'yarn',
         reporters: ['html', 'clear-text', 'progress', 'dashboard'],
         testRunner: 'jest',
