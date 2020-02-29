@@ -13,7 +13,7 @@
     ],
     "scripts": {
         "test": "jest --coverage",
-        "test:mutation": "stryker run ./config/stryker.conf.js",
+        "test:mutation": "stryker run ./config/stryker.config.js",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./config ./src",
         "build": "webpack --config ./config/webpack.config.js",
         "start": "webpack --config ./config/webpack.config.js --progress --color --watch",
@@ -23,7 +23,6 @@
         "@babel/core": "7.8.6",
         "@babel/preset-env": "7.8.6",
         "@babel/preset-typescript": "7.8.3",
-        "@babel/plugin-transform-typescript": "7.8.3",
         "@stryker-mutator/core": "2.5.0",
         "@stryker-mutator/html-reporter": "2.5.0",
         "@stryker-mutator/javascript-mutator": "2.5.0",
