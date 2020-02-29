@@ -13,7 +13,7 @@
     ],
     "scripts": {
         "test": "jest --coverage",
-        "test:mutation": "stryker run ./config/stryker.conf.js",
+        "test:mutation": "stryker run ./config/stryker.config.js",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./config ./src",
         "build": "webpack --config ./config/webpack.config.js",
         "start": "webpack --config ./config/webpack.config.js --progress --color --watch",
