@@ -27,7 +27,7 @@
         "@stryker-mutator/javascript-mutator": "3.1.0",
         "@stryker-mutator/typescript": "3.1.0",
         "@stryker-mutator/jest-runner": "3.1.0",
-        "@typescript-eslint/eslint-plugin": "2.30.0",
+        "@typescript-eslint/eslint-plugin": "2.31.0",
         "@typescript-eslint/parser": "2.30.0",
         "@types/jest": "25.2.1",
         "babel-loader": "8.1.0",
