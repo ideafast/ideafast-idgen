@@ -1,6 +1,6 @@
 {
     "name": "@ideafast/idgen",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "ID generators for the IDEAFast study",
     "main": "./dist/lib.umd.js",
     "module": "./dist/index.js",
