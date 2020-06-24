@@ -3,6 +3,8 @@
     "version": "0.1.0",
     "description": "ID generators for the IDEAFast study",
     "main": "./dist/lib.umd.js",
+    "module": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
     "repository": "https://github.com/ideafast/ideafast-idgen.git",
     "author": "Florian Guitton <f.guitton@imperial.ac.uk>",
     "license": "MIT",
@@ -15,7 +17,7 @@
         "test": "jest --coverage",
         "test:mutation": "stryker run ./config/stryker.config.js",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx ./config ./src",
-        "build": "webpack --config ./config/webpack.config.js",
+        "build": "tsc -p . && webpack --config ./config/webpack.config.js",
         "start": "webpack --config ./config/webpack.config.js --progress --color --watch",
         "prepare": "npm run build"
     },
