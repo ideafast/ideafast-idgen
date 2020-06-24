@@ -4,7 +4,7 @@
     "description": "ID generators for the IDEAFast study",
     "main": "./dist/lib.umd.js",
     "module": "./dist/index.js",
-    "typings": "./dist/index.d.ts",
+    "types": "./dist/index.d.ts",
     "repository": "https://github.com/ideafast/ideafast-idgen.git",
     "author": "Florian Guitton <f.guitton@imperial.ac.uk>",
     "license": "MIT",
