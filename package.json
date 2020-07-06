@@ -25,7 +25,7 @@
         "@babel/core": "7.10.3",
         "@babel/preset-env": "7.10.3",
         "@babel/preset-typescript": "7.10.1",
-        "@stryker-mutator/core": "3.3.0",
+        "@stryker-mutator/core": "3.3.1",
         "@stryker-mutator/javascript-mutator": "3.3.0",
         "@stryker-mutator/jest-runner": "3.3.0",
         "@stryker-mutator/typescript": "3.3.0",
