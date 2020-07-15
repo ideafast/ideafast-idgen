@@ -1184,15 +1184,15 @@
     typed-inject "~2.2.1"
     typed-rest-client "~1.7.1"
 
-"@stryker-mutator/javascript-mutator@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/javascript-mutator/-/javascript-mutator-3.3.0.tgz#3469d18cfd5262ffdf84dd2152ed4e903741c09f"
-  integrity sha512-3IiwzxJKa/L96ltu0KknQW8DxnqorMGh42/qrWRqvV3i9V/AA+CNeTKzQ9xttbwlS2My/e1IBLY7Ziy1agcjiw==
+"@stryker-mutator/javascript-mutator@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/javascript-mutator/-/javascript-mutator-3.3.1.tgz#db22a0802bd0ff6f192d15bcf92d6c1d65b0db15"
+  integrity sha512-YVRw/NZjRcrsu10APeHkIEw+TEr7KMyyu36Tls3TPltXKhXh5IQKihL4nW/zg7AXP7gN1Ym6VhO00ZMs07JeAQ==
   dependencies:
     "@babel/generator" "~7.9.4"
     "@babel/parser" "~7.9.4"
     "@babel/traverse" "~7.9.5"
-    "@stryker-mutator/api" "^3.3.0"
+    "@stryker-mutator/api" "^3.3.1"
     tslib "~2.0.0"
 
 "@stryker-mutator/jest-runner@3.3.1":
