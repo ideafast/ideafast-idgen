@@ -22,7 +22,7 @@
         "prepare": "npm run build"
     },
     "devDependencies": {
-        "@babel/core": "7.10.3",
+        "@babel/core": "7.10.5",
         "@babel/preset-env": "7.10.3",
         "@babel/preset-typescript": "7.10.1",
         "@stryker-mutator/core": "3.3.0",
