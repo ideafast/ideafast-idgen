@@ -1794,10 +1794,10 @@ babel-plugin-jest-hoist@^26.1.0:
     "@types/babel__core" "^7.0.0"
     "@types/babel__traverse" "^7.0.6"
 
-babel-plugin-rewire-ts@1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/babel-plugin-rewire-ts/-/babel-plugin-rewire-ts-1.3.3.tgz#84d5f65c622e39bd9cf289f3245e49406cd64eb3"
-  integrity sha512-bCIfrhk/kHRRobofYnhGEUDmroZq/RxJ6d98M+9a1Ef70PhD0wgQUqizVQhTpT51dmx1GwPS9PXBE3sX1TUJDQ==
+babel-plugin-rewire-ts@1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-rewire-ts/-/babel-plugin-rewire-ts-1.3.4.tgz#d3007a7d9c96fc9d2d5818f395c25bf2504f531f"
+  integrity sha512-7uB9HFnuuXQhxU7nQJqHvBlZxpMMItD3fxR+C9D29ou8PblZz6iXST0v7nyPZkVYme0gFYch4iYLj/DPTm18zw==
 
 babel-preset-current-node-syntax@^0.1.2:
   version "0.1.3"
