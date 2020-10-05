@@ -38,7 +38,7 @@
         "eslint": "7.10.0",
         "eslint-loader": "4.0.2",
         "eslint-plugin-jest": "24.0.2",
-        "jest": "26.4.2",
+        "jest": "26.5.0",
         "rimraf": "3.0.2",
         "typescript": "3.9.7",
         "uglifyjs-webpack-plugin": "2.2.0",
