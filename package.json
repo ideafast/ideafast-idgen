@@ -23,7 +23,7 @@
     },
     "devDependencies": {
         "@babel/core": "7.13.1",
-        "@babel/preset-env": "7.12.17",
+        "@babel/preset-env": "7.13.8",
         "@babel/preset-typescript": "7.13.0",
         "@stryker-mutator/core": "3.3.1",
         "@stryker-mutator/javascript-mutator": "3.3.1",
