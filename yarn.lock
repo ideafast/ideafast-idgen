@@ -1433,17 +1433,27 @@
     tslib "~2.6.2"
     typed-inject "~4.0.0"
 
-"@stryker-mutator/core@8.2.3":
-  version "8.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-8.2.3.tgz#04ff63ca7c83aee35031473d29ce9b37c13811b6"
-  integrity sha512-egwVVyXCXoGR2shUPwkPgSApPsfMlK5xDsPsdaXyOmg7CXtIcpCxgsiy2tcJPnvlu2Ws7G3PlF2tqy7k2FX1hg==
+"@stryker-mutator/api@8.2.6":
+  version "8.2.6"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/api/-/api-8.2.6.tgz#b2f8d6054c1ae23a4e66c12464d5ac44f44ace1d"
+  integrity sha512-ygPT37teKh2Ei3sj+cs+kNpaFiz0JyelSDEz4GiQXu8DXy79D0oglSFAKsiVBdzO6MD2eRtyclovfdr/OdPVwA==
   dependencies:
-    "@stryker-mutator/api" "8.2.3"
-    "@stryker-mutator/instrumenter" "8.2.3"
-    "@stryker-mutator/util" "8.2.3"
+    mutation-testing-metrics "3.0.2"
+    mutation-testing-report-schema "3.0.2"
+    tslib "~2.6.2"
+    typed-inject "~4.0.0"
+
+"@stryker-mutator/core@8.2.6":
+  version "8.2.6"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/core/-/core-8.2.6.tgz#9d531d79986c137b1e4e73aaf4c1be9745bea84a"
+  integrity sha512-F3JaVOJn+m2xEzNXFrdWl0/34WOnnqjrBADyvxTfoejP8k/oz6R89+QPrR8RwuhTVZUdrmakNkHRPXh9CsaWkw==
+  dependencies:
+    "@stryker-mutator/api" "8.2.6"
+    "@stryker-mutator/instrumenter" "8.2.6"
+    "@stryker-mutator/util" "8.2.6"
     ajv "~8.12.0"
     chalk "~5.3.0"
-    commander "~11.1.0"
+    commander "~12.0.0"
     diff-match-patch "1.0.5"
     emoji-regex "~10.3.0"
     execa "~8.0.1"
@@ -1457,7 +1467,7 @@
     mutation-testing-elements "3.0.2"
     mutation-testing-metrics "3.0.2"
     mutation-testing-report-schema "3.0.2"
-    npm-run-path "~5.2.0"
+    npm-run-path "~5.3.0"
     progress "~2.0.3"
     rxjs "~7.8.1"
     semver "^7.5.4"
@@ -1467,20 +1477,20 @@
     typed-inject "~4.0.0"
     typed-rest-client "~1.8.11"
 
-"@stryker-mutator/instrumenter@8.2.3":
-  version "8.2.3"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/instrumenter/-/instrumenter-8.2.3.tgz#ddf80f7a95b401b88860ce69ee3b6dbb2256d3da"
-  integrity sha512-Mgor20apuHZEXH0Bwa9spLHEISIqQXCQy0SCr4uSSwC5/Jmz38AHijK5l6JoiyTuCMmaHQMd5zrG8Q2PAhDdWQ==
+"@stryker-mutator/instrumenter@8.2.6":
+  version "8.2.6"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/instrumenter/-/instrumenter-8.2.6.tgz#784cead24267496615a3378ff6385ac1035c041f"
+  integrity sha512-2o9ffO4yBxAtCbnOsOAojQmBI4IZcFTCMW9o7CaTThNTQ6j/8gLaU1suxt3IPCRGl30rph0skBAyKiiWaUVhMw==
   dependencies:
     "@babel/core" "~7.23.9"
     "@babel/generator" "~7.23.6"
     "@babel/parser" "~7.23.9"
     "@babel/plugin-proposal-decorators" "~7.23.9"
     "@babel/preset-typescript" "~7.23.3"
-    "@stryker-mutator/api" "8.2.3"
-    "@stryker-mutator/util" "8.2.3"
+    "@stryker-mutator/api" "8.2.6"
+    "@stryker-mutator/util" "8.2.6"
     angular-html-parser "~5.2.0"
-    semver "~7.5.4"
+    semver "~7.6.0"
     weapon-regex "~1.3.0"
 
 "@stryker-mutator/jest-runner@8.2.3":
@@ -1497,6 +1507,11 @@
   version "8.2.3"
   resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-8.2.3.tgz#cf91096a795d918505b7b2aaeac956c873b0ae4f"
   integrity sha512-wo3OhxmDqDVIsZkaVGrRj85/hlcNuyZr1wKKEiddfQdf3cXO3UeC4Q0i3HdnH+wn9DnWWgNPrin9PgyL/2fXOQ==
+
+"@stryker-mutator/util@8.2.6":
+  version "8.2.6"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-8.2.6.tgz#609890d750370c73530c30dab335d7c682e90d6c"
+  integrity sha512-2jmSYmrbGqt59JBkv1TvoOwQpUccCL3c90FLZIWg1zBNwj6zeOrwh734E5dKswDaC+BudQ3FtwlWB5augSuo1w==
 
 "@types/babel__core@^7.1.14":
   version "7.20.3"
@@ -2380,10 +2395,10 @@ commander@^2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
-commander@~11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
-  integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
+commander@~12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-12.0.0.tgz#b929db6df8546080adfd004ab215ed48cf6f2592"
+  integrity sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==
 
 common-path-prefix@^3.0.0:
   version "3.0.0"
@@ -4020,10 +4035,10 @@ npm-run-path@^4.0.1:
   dependencies:
     path-key "^3.0.0"
 
-npm-run-path@^5.1.0, npm-run-path@~5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-5.2.0.tgz#224cdd22c755560253dd71b83a1ef2f758b2e955"
-  integrity sha512-W4/tgAXFqFA0iL7fk0+uQ3g7wkL8xJmx3XdK0VGb4cHW//eZTtKGvFBBoRKVTpY7n6ze4NL9ly7rgXcHufqXKg==
+npm-run-path@^5.1.0, npm-run-path@~5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/npm-run-path/-/npm-run-path-5.3.0.tgz#e23353d0ebb9317f174e93417e4a4d82d0249e9f"
+  integrity sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==
   dependencies:
     path-key "^4.0.0"
 
@@ -4467,7 +4482,14 @@ semver@^6.3.0, semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
-semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@~7.5.4:
+semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@~7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
+  integrity sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@~7.5.4:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
