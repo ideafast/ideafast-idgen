@@ -1,3 +1,28 @@
 {
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.tabSize": 4,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "css.format.enable": true,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#af2b70",
+        "titleBar.activeForeground": "#f1cee1",
+        "titleBar.inactiveBackground": "#d53488",
+        "titleBar.inactiveForeground": "#e6d5dd"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
