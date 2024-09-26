@@ -1,8 +1,9 @@
 module.exports = {
     mutate: [
-        '{src,lib}/**/*.[jt]s?(x)',
-        '!{src,lib}/**/?(*.)+(spec|test).[jt]s?(x)',
+        'src/**/*.ts', '!src/**/*.spec.ts'
     ],
+    ignorePatterns: ['{coverage,dist,reports}'],
+    disableTypeChecks: '{coverage,dist,reports,config}/**/*.*',
     packageManager: 'yarn',
     reporters: ['html', 'clear-text', 'progress', 'dashboard'],
     testRunner: 'jest',
